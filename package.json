@@ -1,8 +1,8 @@
 {
-  "name": "RNBareTS",
+  "name": "fuelupeducation-rn",
   "version": "0.0.1",
   "private": false,
-  "homepage": "https://github.com/SayeedAfridi/rn-bare-with-splash-screen-typescript",
+  "homepage": "https://github.com/FuelupEducationIndia/fuelupeducation-rn",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -34,9 +34,11 @@
   "jest": {
     "preset": "react-native"
   },
-  "repository": "https://github.com/SayeedAfridi/rn-bare-with-splash-screen-typescript.git",
+  "repository": "https://github.com/FuelupEducationIndia/fuelupeducation-rn",
   "author": "Sayeed Afridi",
   "keywords": [
+    "fuelup",
+    "education",
     "react-native",
     "rn",
     "react-native-bootsplash",

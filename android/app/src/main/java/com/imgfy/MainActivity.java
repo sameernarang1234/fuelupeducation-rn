@@ -1,4 +1,4 @@
-package com.sayeed.rnbarets;
+package com.fuelupeducation.fuelupeducation;
 
 import com.facebook.react.ReactActivity;
 import com.zoontek.rnbootsplash.RNBootSplash;
@@ -13,7 +13,7 @@ public class MainActivity extends ReactActivity {
 
   @Override
   protected String getMainComponentName() {
-    return "RNBareTS";
+    return "Fuelup Education";
   }
 
   @Override

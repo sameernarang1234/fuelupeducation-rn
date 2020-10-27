@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.sayeed.rnbarets"
+        applicationId "com.fuelupeducation.fuelupeducation"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

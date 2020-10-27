@@ -1,4 +1,4 @@
-package com.sayeed.rnbarets;
+package com.fuelupeducation.fuelupeducation;
 
 import android.app.Application;
 import android.content.Context;
