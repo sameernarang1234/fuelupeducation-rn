@@ -24,7 +24,7 @@ const Button: React.FC<BProps> = ({
       onPress={onPress}>
       {icon && !loading ? <Icon name={icon} style={styles.icon} /> : null}
       {loading ? <ActivityIndicator color='white' style={styles.icon} /> : null}
-      <Text variant='buttonText'>{title}</Text>
+      <Text variant='button'>{title}</Text>
     </TouchableOpacity>
   )
 }
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     alignItems: 'center',
   },
   icon: {
-    fontSize: theme.textVariants.buttonText.fontSize,
+    fontSize: theme.textVariants.button.fontSize,
     color: 'white',
     marginRight: theme.spacing.s,
   },
