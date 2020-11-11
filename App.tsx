@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react'
-import { StyleSheet, View, Text, StatusBar } from 'react-native'
+import * as React from 'react'
+import { StyleSheet, View, StatusBar, Alert } from 'react-native'
 import RNBootSplash from 'react-native-bootsplash'
 import { ThemeProvider } from '@shopify/restyle'
 import theme from './src/Theme'
 import { NavigationContainer } from '@react-navigation/native'
+import { Button } from './src/components/index'
 
 const App: React.FC = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     RNBootSplash.hide()
   }, [])
   return (
@@ -14,7 +15,11 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <View style={styles.container}>
           <StatusBar barStyle='light-content' />
-          <Text>Start editing App.js</Text>
+          <Button
+            icon='check'
+            onPress={() => Alert.alert('Message', 'You clicked the button')}
+            title='Click Me'
+          />
         </View>
       </ThemeProvider>
     </NavigationContainer>
