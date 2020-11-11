@@ -44,7 +44,7 @@ const theme = createTheme({
     },
     headerText: {
       fontSize: 32,
-      fontWeight: '400',
+      fontWeight: 'bold',
       textAlign: 'center',
     },
   },

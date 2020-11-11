@@ -36,16 +36,13 @@ const theme = createTheme({
     none: 0,
     round: 100 / 2,
   },
-  textVariants: {
+  TextVariant: {
     buttonText: {
       fontSize: 16,
       color: 'white',
-      fontWeight: 'bold',
-    },
-    headerText: {
-      fontSize: 32,
-      fontWeight: '400',
-      textAlign: 'center',
+      textTransform: false,
+      margin: 8,
+      padding: 4,
     },
   },
 })

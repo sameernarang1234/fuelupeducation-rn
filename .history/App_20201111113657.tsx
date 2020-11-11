@@ -16,7 +16,7 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <View style={styles.container}>
           <StatusBar barStyle='light-content' />
-          <Header text='Header Component' />
+          <Header text='Welcome Interns' />
           <Button
             onPress={() => Alert.alert('Message', 'You clicked the button')}
             title='Click Me'

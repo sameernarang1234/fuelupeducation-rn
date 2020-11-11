@@ -41,11 +41,9 @@ const theme = createTheme({
       fontSize: 16,
       color: 'white',
       fontWeight: 'bold',
-    },
-    headerText: {
-      fontSize: 32,
-      fontWeight: '400',
-      textAlign: 'center',
+      textTransform: false,
+      margin: 4,
+      padding: 4,
     },
   },
 })

@@ -1,11 +1,11 @@
 import * as React from 'react'
-import { StyleSheet, View, StatusBar, Alert } from 'react-native'
+import { StyleSheet, View, StatusBar } from 'react-native'
 import RNBootSplash from 'react-native-bootsplash'
 import { ThemeProvider } from '@shopify/restyle'
 import theme from './src/Theme'
-//import { Text } from './src/Theme'
+import { Text } from './src/Theme'
 import { NavigationContainer } from '@react-navigation/native'
-import { Button, Header } from './src/components/index'
+import { Button } from './src/components/index'
 
 const App: React.FC = () => {
   React.useEffect(() => {
@@ -16,9 +16,11 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <View style={styles.container}>
           <StatusBar barStyle='light-content' />
-          <Header text='Header Component' />
+          <Text>Start editing App.js</Text>
           <Button
-            onPress={() => Alert.alert('Message', 'You clicked the button')}
+            onPress={() => {
+              console.log('You clicked me')
+            }}
             title='Click Me'
           />
         </View>
