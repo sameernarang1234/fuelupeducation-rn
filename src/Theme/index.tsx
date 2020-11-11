@@ -5,24 +5,24 @@ import {
   useTheme as useReTheme,
 } from '@shopify/restyle'
 import { ViewStyle, TextStyle, ImageStyle } from 'react-native'
+import palette from './palette'
 
 const theme = createTheme({
   colors: {
-    primary: '#4F0EA2',
-    secondary: '#F16711',
-    primaryLight: 'rgba(79, 14, 162, 0.3)',
-    text: '#070707',
-    darkGrey: '#8a8d90',
-    grey: 'rgba(12, 13, 52, 0.05)',
-    white: 'white',
-    lightGrey: '#f4f0ef',
-    danger: '#ff0058',
+    primary: palette.purple,
+    secondary: palette.orange,
+    primaryLight: palette.lightPurple,
+    text: palette.black,
+    grey: palette.grey,
+    white: palette.white,
+    lightGrey: palette.lightGrey,
   },
   spacing: {
     s: 8,
     m: 16,
     l: 24,
     xl: 40,
+    none: 0,
   },
   breakpoints: {
     phone: 0,
@@ -37,15 +37,20 @@ const theme = createTheme({
     round: 100 / 2,
   },
   textVariants: {
-    buttonText: {
-      fontSize: 16,
+    button: {
+      fontSize: 18,
       color: 'white',
-      fontWeight: 'bold',
+      fontFamily: 'SFProDisplay-Medium',
     },
-    headerText: {
-      fontSize: 32,
-      fontWeight: '400',
-      textAlign: 'center',
+    body: {
+      fontSize: 16,
+      fontFamily: 'SFProDisplay-Regular',
+      color: 'text',
+    },
+    title: {
+      fontSize: 24,
+      fontFamily: 'SFProDisplay-Medium',
+      color: 'text',
     },
   },
 })
