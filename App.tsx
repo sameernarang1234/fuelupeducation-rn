@@ -4,11 +4,11 @@ import RNBootSplash from 'react-native-bootsplash'
 import { ThemeProvider } from '@shopify/restyle'
 import theme from './src/Theme'
 import { NavigationContainer } from '@react-navigation/native'
-import { Button } from './src/components/index'
+import { Button } from './src/components'
 
 const App: React.FC = () => {
   React.useEffect(() => {
-    RNBootSplash.hide()
+    RNBootSplash.hide({ duration: 250 })
   }, [])
   return (
     <NavigationContainer>
