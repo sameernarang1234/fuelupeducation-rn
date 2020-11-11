@@ -10,6 +10,8 @@ const palette = {
 
   grey: '#444547',
   lightGrey: '#c3c0c7',
+
+  red: '#f44336',
 }
 
 export default palette
