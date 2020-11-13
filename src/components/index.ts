@@ -1,3 +1,5 @@
-export { Button } from './Button'
+export { Button, SquareIconButton } from './Button'
 export { TextInput } from './Form'
 export { HeaderWithIcon } from './Header'
+export { default as RoundedIcon } from './RoundedIcon'
+export { default as SquareIcon } from './SquareIcon'
