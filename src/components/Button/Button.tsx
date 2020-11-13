@@ -38,7 +38,9 @@ const Button: React.FC<ButtonProps> = ({
       onPress={onPress}>
       {icon && !loading ? <Icon name={icon} style={styles.icon} /> : null}
       {loading ? <ActivityIndicator color='white' style={styles.icon} /> : null}
-      <Text variant='button'>{title}</Text>
+      <Text lineHeight={22} variant='button'>
+        {title}
+      </Text>
     </TouchableOpacity>
   )
 }
@@ -54,7 +56,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'center',
   },
   icon: {
-    fontSize: theme.textVariants.button.fontSize * 1.13,
+    fontSize: 22,
     color: 'white',
     marginRight: theme.spacing.s,
   },
