@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { TouchableOpacity, ActivityIndicator } from 'react-native'
-import { Text, Theme, makeStyles, useTheme } from '../'
+import { Text, Theme, makeStyles, useTheme } from '../../Theme'
 import Icon from 'react-native-vector-icons/Feather'
 
 export interface ButtonProps {

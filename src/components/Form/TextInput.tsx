@@ -4,7 +4,7 @@ import {
   StyleSheet,
   TextInputProps as RnTextInputProps,
 } from 'react-native'
-import { Box, useTheme } from '../'
+import { Box, useTheme } from '../../Theme'
 import Icon from 'react-native-vector-icons/Feather'
 import RoundedIcon from '../RoundedIcon'
 

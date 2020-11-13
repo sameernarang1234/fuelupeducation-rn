@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box, Text } from './'
+import { Box, Text } from './../Theme'
 import Icon from 'react-native-vector-icons/Feather'
-import { Theme } from './'
+import { Theme } from './../Theme'
 
 export interface RoundedIconProps {
   name: string
