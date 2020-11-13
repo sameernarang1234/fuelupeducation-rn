@@ -4,7 +4,7 @@ import RNBootSplash from 'react-native-bootsplash'
 import { ThemeProvider } from '@shopify/restyle'
 import theme from './src/Theme'
 import { NavigationContainer } from '@react-navigation/native'
-import { Button } from './src/components'
+import { Button, HeaderWithIcon } from './src/components'
 
 const App: React.FC = () => {
   const [loading, setLoading] = React.useState(false)
@@ -16,6 +16,7 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <View style={styles.container}>
           <StatusBar barStyle='light-content' />
+          <HeaderWithIcon />
           <Button
             variant='primary'
             block
@@ -33,9 +34,7 @@ const App: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    padding: 10,
   },
 })
 

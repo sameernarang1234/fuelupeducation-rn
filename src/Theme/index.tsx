@@ -53,6 +53,16 @@ const theme = createTheme({
       fontFamily: 'SFProDisplay-Medium',
       color: 'text',
     },
+    header: {
+      fontSize: 24,
+      lineHeight: 24,
+      fontFamily: 'SFProDisplay-Medium',
+      color: 'text',
+    },
+    slogan: {
+      fontSize: 11,
+      color: 'grey',
+    },
   },
 })
 
