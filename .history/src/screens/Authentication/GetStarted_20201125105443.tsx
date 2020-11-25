@@ -9,7 +9,7 @@ const height = 220
 const GetStarted: React.FC = () => {
   const styles = useStyles()
   return (
-    <ScrollView showsVerticalScrollIndicator={false}>
+    <ScrollView showsHorizontalScrollIndicator>
       <Box style={styles.container}>
         <Text variant='getStarted' style={styles.textStyle}>
           Get started now
