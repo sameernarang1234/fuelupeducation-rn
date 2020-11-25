@@ -4,11 +4,10 @@ import RNBootSplash from 'react-native-bootsplash'
 import { ThemeProvider } from '@shopify/restyle'
 import theme from './src/Theme'
 import { NavigationContainer } from '@react-navigation/native'
-//import { Button, HeaderWithIcon } from './src/components'
-import { GetStarted } from './src/screens'
+import { Button, HeaderWithIcon } from './src/components'
 
 const App: React.FC = () => {
-  //const [loading, setLoading] = React.useState(false)
+  const [loading, setLoading] = React.useState(false)
   React.useEffect(() => {
     RNBootSplash.hide({ duration: 250 })
   }, [])
@@ -17,7 +16,7 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <View style={styles.container}>
           <StatusBar barStyle='light-content' />
-          {/* <HeaderWithIcon />
+          <HeaderWithIcon />
           <Button
             variant='primary'
             block
@@ -25,8 +24,7 @@ const App: React.FC = () => {
             loading={loading}
             onPress={() => setLoading((prev) => !prev)}
             title='Click Me'
-          /> */}
-          <GetStarted />
+          />
         </View>
       </ThemeProvider>
     </NavigationContainer>

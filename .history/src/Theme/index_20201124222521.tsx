@@ -63,17 +63,6 @@ const theme = createTheme({
       fontSize: 11,
       color: 'grey',
     },
-    getStarted: {
-      fontSize: 24,
-      fontFamily: 'SFProDisplay-Regular',
-      color: 'text',
-    },
-    getStartedText: {
-      fontSize: 18,
-      fontFamily: 'SFProDisplay-Regular',
-      color: 'grey',
-      lineHeight: 24,
-    },
   },
 })
 
