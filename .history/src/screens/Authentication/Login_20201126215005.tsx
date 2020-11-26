@@ -28,13 +28,13 @@ const Login: React.FC = () => {
           </Box>
           <Box>
             <Button
-              title='Sign in'
-              variant='primary'
+              title='Create account'
+              variant='secondary'
               onPress={() => Alert.alert('Message', 'button pressed')}
             />
           </Box>
           <Box style={styles.signupText}>
-            <Text variant='getStartedText'>or sign in with</Text>
+            <Text variant='getStartedText'>or sign up with</Text>
           </Box>
           <Box style={styles.socialButton}>
             <Box style={styles.social}>
@@ -44,7 +44,7 @@ const Login: React.FC = () => {
                 size={35}
                 color={'danger'}
                 backgroundColor={'white'}
-                onPress={() => Alert.alert('Message', 'sign in with google ')}
+                onPress={() => Alert.alert('Message', 'sign up with google ')}
               />
             </Box>
             <Box style={styles.social}>
@@ -54,7 +54,7 @@ const Login: React.FC = () => {
                 size={35}
                 color={'blue'}
                 backgroundColor={'white'}
-                onPress={() => Alert.alert('Message', 'sign in with facebook ')}
+                onPress={() => Alert.alert('Message', 'sign up with facebook ')}
               />
             </Box>
             <SquareIconButton
@@ -63,18 +63,8 @@ const Login: React.FC = () => {
               size={35}
               color={'blue'}
               backgroundColor={'white'}
-              onPress={() => Alert.alert('Message', 'sign in with twitter ')}
+              onPress={() => Alert.alert('Message', 'sign up with twitter ')}
             />
-          </Box>
-          <Box style={styles.socialButton}>
-            <Text variant='getStartedText' style={{ marginRight: 5 }}>
-              Don't have an account?
-            </Text>
-            <Text
-              variant='linkText'
-              onPress={() => Alert.alert('Message', 'go to signup screen ')}>
-              Create account
-            </Text>
           </Box>
         </Box>
       </TouchableWithoutFeedback>

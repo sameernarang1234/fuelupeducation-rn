@@ -75,12 +75,7 @@ const theme = createTheme({
       color: 'grey',
       lineHeight: 24,
     },
-    linkText: {
-      fontSize: 18,
-      fontFamily: 'SFProDisplay-Regular',
-      color: 'primary',
-      lineHeight: 24,
-    },
+    linkText: {},
   },
 })
 

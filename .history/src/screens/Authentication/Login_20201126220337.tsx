@@ -44,7 +44,7 @@ const Login: React.FC = () => {
                 size={35}
                 color={'danger'}
                 backgroundColor={'white'}
-                onPress={() => Alert.alert('Message', 'sign in with google ')}
+                onPress={() => Alert.alert('Message', 'sign up with google ')}
               />
             </Box>
             <Box style={styles.social}>
@@ -54,7 +54,7 @@ const Login: React.FC = () => {
                 size={35}
                 color={'blue'}
                 backgroundColor={'white'}
-                onPress={() => Alert.alert('Message', 'sign in with facebook ')}
+                onPress={() => Alert.alert('Message', 'sign up with facebook ')}
               />
             </Box>
             <SquareIconButton
@@ -63,7 +63,7 @@ const Login: React.FC = () => {
               size={35}
               color={'blue'}
               backgroundColor={'white'}
-              onPress={() => Alert.alert('Message', 'sign in with twitter ')}
+              onPress={() => Alert.alert('Message', 'sign up with twitter ')}
             />
           </Box>
           <Box style={styles.socialButton}>
