@@ -12,8 +12,6 @@ const palette = {
   lightGrey: '#c3c0c7',
 
   red: '#f44336',
-
-  blue: '#10A9E5',
 }
 
 export default palette

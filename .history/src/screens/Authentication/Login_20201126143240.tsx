@@ -42,7 +42,7 @@ const Login: React.FC = () => {
               <SquareIconButton
                 iconRatio={0.7}
                 name='google'
-                size={35}
+                size={40}
                 color={'danger'}
                 backgroundColor={'white'}
                 onPress={() => Alert.alert('Message', 'sign up with google ')}
@@ -52,7 +52,7 @@ const Login: React.FC = () => {
               <SquareIconButton
                 iconRatio={0.7}
                 name='facebook-f'
-                size={35}
+                size={40}
                 color={'blue'}
                 backgroundColor={'white'}
                 onPress={() => Alert.alert('Message', 'sign up with facebook ')}
@@ -61,7 +61,7 @@ const Login: React.FC = () => {
             <SquareIconButton
               iconRatio={0.7}
               name='twitter'
-              size={35}
+              size={40}
               color={'blue'}
               backgroundColor={'white'}
               onPress={() => Alert.alert('Message', 'sign up with twitter ')}
