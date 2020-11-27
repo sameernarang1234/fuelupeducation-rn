@@ -1,12 +1,13 @@
 import * as React from 'react'
-import { Alert, ScrollView } from 'react-native'
+import { ScrollView } from 'react-native'
 import { Box, Text, makeStyles } from '../../Theme'
 import SvgLogo from '../../assets/svg/book_lover.svg'
 import { Button } from '../../components/Button'
+import { AuthNavigationProps } from '../../Navigation'
 const width = 300
 const height = 220
 
-const GetStarted: React.FC = () => {
+const GetStarted = ({ navigation }: AuthNavigationProps<'GetStarted'>) => {
   const styles = useStyles()
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
@@ -27,12 +28,12 @@ const GetStarted: React.FC = () => {
           <Button
             title='Sign in'
             variant='primary'
-            onPress={() => Alert.alert('Message', 'Go to Sign in screen')}
+            onPress={() => navigation.navigate('Login')}
           />
           <Button
             title='Create account'
             variant='secondary'
-            onPress={() => Alert.alert('Message', 'Go to Sign up screen')}
+            onPress={() => navigation.navigate('Signup')}
           />
         </Box>
       </Box>

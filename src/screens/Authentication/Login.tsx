@@ -12,8 +12,9 @@ import {
   TextInput,
   SquareIconButton,
 } from '../../components'
+import { AuthNavigationProps } from '../../Navigation'
 
-const Login: React.FC = () => {
+const Login = ({ navigation }: AuthNavigationProps<'GetStarted'>) => {
   const styles = useStyles()
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
@@ -72,7 +73,7 @@ const Login: React.FC = () => {
             </Text>
             <Text
               variant='linkText'
-              onPress={() => Alert.alert('Message', 'go to signup screen ')}>
+              onPress={() => navigation.navigate('Signup')}>
               Create account
             </Text>
           </Box>

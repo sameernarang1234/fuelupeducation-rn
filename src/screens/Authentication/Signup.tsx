@@ -25,7 +25,7 @@ const Signup: React.FC = () => {
           <Box>
             <TextInput icon='mail' placeholder='Email or Phone number' />
             <TextInput icon='lock' placeholder='Password' />
-            <TextInput icon='lock' placeholder='Remember password' />
+            <TextInput icon='lock' placeholder='Confirm password' />
           </Box>
           <Box>
             <Button
