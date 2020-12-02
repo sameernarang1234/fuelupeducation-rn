@@ -9,7 +9,7 @@ import Icon from 'react-native-vector-icons/Feather'
 import RoundedIcon from '../RoundedIcon'
 
 interface TextInputProps extends RnTextInputProps {
-  icon?: string | any
+  icon?: string
   placeholder: string
   error?: string
   touched?: boolean

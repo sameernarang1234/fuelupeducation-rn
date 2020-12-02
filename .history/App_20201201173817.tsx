@@ -5,7 +5,7 @@ import { ThemeProvider } from '@shopify/restyle'
 import theme from './src/Theme'
 import { NavigationContainer } from '@react-navigation/native'
 //import { AuthenticationNavigator } from './src/screens'
-import WelcomeTeacher from './src/screens/Authentication/WelcomeTeacher'
+import AccountCreatedTeacher from './src/screens/Authentication/AccountCreatedTeacher'
 
 const App: React.FC = () => {
   //const [loading, setLoading] = useState(false)
@@ -17,7 +17,7 @@ const App: React.FC = () => {
       <StatusBar barStyle='light-content' />
       <ThemeProvider theme={theme}>
         {/* <AuthenticationNavigator /> */}
-        <WelcomeTeacher />
+        <AccountCreatedTeacher />
       </ThemeProvider>
     </NavigationContainer>
   )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import {
   TextInput as RNTextInput,
   StyleSheet,
@@ -9,10 +9,11 @@ import Icon from 'react-native-vector-icons/Feather'
 import RoundedIcon from '../RoundedIcon'
 
 interface TextInputProps extends RnTextInputProps {
-  icon?: string | any
+  icon?: string
   placeholder: string
   error?: string
   touched?: boolean
+  children: React.ReactChildren
 }
 export type TextInputRef = RNTextInput
 
@@ -50,6 +51,7 @@ const TextInput = React.forwardRef<TextInputRef, TextInputProps>(
           underlineColorAndroid='transparent'
           style={{ flex: 1 }}
           placeholderTextColor={theme.colors.grey}
+          {...Children}
           {...props}
         />
         {touched ? (
