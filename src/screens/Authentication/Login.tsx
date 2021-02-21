@@ -13,6 +13,7 @@ import {
   SquareIconButton,
 } from '../../components'
 import { AuthNavigationProps } from '../../Navigation'
+import { ROUTES } from '../../Navigation/Routes'
 
 const Login = ({ navigation }: AuthNavigationProps<'GetStarted'>) => {
   const styles = useStyles()
@@ -31,7 +32,7 @@ const Login = ({ navigation }: AuthNavigationProps<'GetStarted'>) => {
             <Button
               title='Sign in'
               variant='primary'
-              onPress={() => Alert.alert('Message', 'button pressed')}
+              onPress={() => navigation.navigate(ROUTES.StudentDashboard)}
             />
           </Box>
           <Box style={styles.signupText}>

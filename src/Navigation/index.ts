@@ -12,4 +12,5 @@ export type AuthenticationRoutes = {
   GetStarted: undefined
   Login: undefined
   Signup: undefined
+  StudentDashboard: undefined
 }
